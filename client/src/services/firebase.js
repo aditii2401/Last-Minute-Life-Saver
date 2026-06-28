@@ -4,12 +4,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Paste YOUR firebaseConfig here
 const firebaseConfig = {
-  apiKey: "AIzaSyAT-wi1XJvv84ufiLApLPAmhc9895Ffis0",
-  authDomain: "ai-life-saver.firebaseapp.com",
-  projectId: "ai-life-saver",
-  storageBucket: "ai-life-saver.firebasestorage.app",
-  messagingSenderId: "205210201076",
-  appId: "1:205210201076:web:d6636af3856c098dfd27a1",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
